@@ -82,7 +82,7 @@ class SchumacherFM_OpCachePanel_Adminhtml_OpCachePanelController extends Mage_Ad
      *
      * @return boolean
      */
-    protected function _isAllowed()
+    protected function _isAllowed(): bool
     {
         return Mage::getSingleton('admin/session')->isAllowed('system/opcache');
     }
